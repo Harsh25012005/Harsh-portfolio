@@ -1,0 +1,262 @@
+.project-detail {
+  padding: 2rem 0 4rem;
+}
+
+/* Navigation */
+.project-nav {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+/* Project Header */
+.project-header {
+  margin-bottom: 4rem;
+}
+
+.project-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-category {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-year {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.project-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.project-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.project-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.info-item h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.info-item p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Project Images */
+.project-images {
+  margin-bottom: 4rem;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-image {
+  aspect-ratio: 16/10;
+  background-color: var(--bg-secondary);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.image-placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0.5;
+  text-align: center;
+  padding: 1rem;
+}
+
+.image-placeholder p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* Project Content */
+.project-content {
+  margin-bottom: 4rem;
+}
+
+.content-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.content-section h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+}
+
+.results-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.results-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.results-list li:last-child {
+  border-bottom: none;
+}
+
+/* Project Tags */
+.project-tags-section {
+  margin-bottom: 4rem;
+}
+
+.project-tags-section h4 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}
+
+/* Next Project */
+.next-project {
+  background-color: var(--bg-secondary);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.next-project-content h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.next-project-content p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.next-project-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-not-found {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.project-not-found h1 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.project-not-found p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 2.5rem;
+  }
+  
+  .project-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .images-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .next-project {
+    padding: 2rem 1rem;
+  }
+  
+  .next-project-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .next-project-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .next-project-actions .btn {
+    width: 200px;
+  }
+}
